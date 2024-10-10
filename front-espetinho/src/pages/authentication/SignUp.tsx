@@ -15,7 +15,7 @@ import { useState, ReactElement } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { rootPaths } from 'routes/paths';
 import Image from 'components/base/Image';
-import logoWithText from '/Logo-with-text.png';
+import logoWithText from '/src/assets/images/logos/logo.png';
 
 const SignUp = (): ReactElement => {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ const SignUp = (): ReactElement => {
     <>
       <Box component="figure" mb={5} mx="auto" textAlign="center">
         <Link href={rootPaths.homeRoot}>
-          <Image src={logoWithText} alt="logo with text" height={60} />
+          <Image src={logoWithText} alt="logo with text" height={70} />
         </Link>
       </Box>
       <Paper
