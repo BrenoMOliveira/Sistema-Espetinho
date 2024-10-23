@@ -15,7 +15,12 @@ const AuthLayout = lazy<({ children }: PropsWithChildren) => ReactElement>(
   () => import('layouts/auth-layout'),
 );
 
-const Dashboard = lazy<() => ReactElement>(() => import('pages/dashboard/Dashboard'));
+const Dashboard = lazy<() => ReactElement>(() => import('pages/abas/Dashboard'));
+const Vendas = lazy<() => ReactElement>(() => import('pages/abas/Vendas'));
+const Estoque = lazy<() => ReactElement>(() => import('pages/abas/Estoque'));
+const Produtos = lazy<() => ReactElement>(() => import('pages/abas/Produtos'));
+const Relatorios = lazy<() => ReactElement>(() => import('pages/abas/Relatorios'));
+const Config = lazy<() => ReactElement>(() => import('pages/abas/Config'));
 const Login = lazy<() => ReactElement>(() => import('pages/authentication/Login'));
 const SignUp = lazy<() => ReactElement>(() => import('pages/authentication/SignUp'));
 const ErrorPage = lazy<() => ReactElement>(() => import('pages/error/ErrorPage'));
@@ -41,6 +46,26 @@ const routes: RouteObject[] = [
           {
             index: true,
             element: <Dashboard />,
+          },
+          {
+            path: paths.vendas,
+            element: <Vendas />,
+          },
+          {
+            path: paths.estoque,
+            element: <Estoque />,
+          },
+          {
+            path: paths.produtos,
+            element: <Produtos />,
+          },
+          {
+            path: paths.relatorios,
+            element: <Relatorios />,
+          },
+          {
+            path: paths.config,
+            element: <Config />,
           },
         ],
       },
