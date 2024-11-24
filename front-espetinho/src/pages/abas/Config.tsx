@@ -8,7 +8,7 @@ import TopProducts from 'components/sections/dashboard/top-products/TopProducts'
 import TrendingNow from 'components/sections/dashboard/trending-now/TrendingNow';
 import Customers from 'components/sections/dashboard/customers/Customers';
 import Earnings from 'components/sections/dashboard/earnings/Earnings';
-import Level from 'components/sections/dashboard/level/Level';
+//import Level from 'components/sections/dashboard/vendas/SalesForm';
 
 const Dashboard = (): ReactElement => {
   return (
@@ -16,9 +16,6 @@ const Dashboard = (): ReactElement => {
       <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={3.5}>
         <Box gridColumn={{ xs: 'span 12', '2xl': 'span 8' }} order={{ xs: 0 }}>
           <TodaysSales />
-        </Box>
-        <Box gridColumn={{ xs: 'span 12', lg: 'span 4' }} order={{ xs: 1, '2xl': 1 }}>
-          <Level />
         </Box>
         <Box gridColumn={{ xs: 'span 12', lg: 'span 8' }} order={{ xs: 2, '2xl': 2 }}>
           <TopProducts />

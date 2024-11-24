@@ -68,50 +68,7 @@ const Topbar = ({
           >
             <IconifyIcon icon="mdi:search" />
           </IconButton>
-          <TextField
-            variant="filled"
-            fullWidth
-            placeholder="Search here..."
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-            }}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="end">
-                  <IconifyIcon icon="akar-icons:search" width={13} height={13} />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Stack>
-        <Stack
-          direction="row"
-          gap={3.75}
-          alignItems="center"
-          justifyContent="flex-end"
-          mr={3.75}
-          flex="1 1 20%"
-        >
-          <Badge
-            color="error"
-            badgeContent=" "
-            variant="dot"
-            sx={{
-              '& .MuiBadge-badge': {
-                top: 11,
-                right: 11,
-              },
-            }}
-          >
-            <IconButton
-              sx={{
-                padding: 1,
-              }}
-            >
-              <IconifyIcon icon="ph:bell-bold" width={29} height={32} />
-            </IconButton>
-          </Badge>
-          <UserDropdown />
+          
         </Stack>
       </Toolbar>
     </AppBar>

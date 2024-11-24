@@ -52,13 +52,6 @@ const DataGrid: DataGridComponents<Omit<Theme, 'components'>>['MuiDataGrid'] = {
     overlay: ({ theme }) => ({
       backgroundColor: theme.palette.background.paper,
     }),
-    footerContainer: ({ theme }) => ({
-      minHeight: theme.spacing(10.5),
-      justifyContent: 'normal',
-      backgroundColor: theme.palette.background.paper,
-      borderBottomLeftRadius: theme.shape.borderRadius * 2.5,
-      borderBottomRightRadius: theme.shape.borderRadius * 2.5,
-    }),
     columnHeader: () => ({
       '&:focus': {
         outline: 'none !important',

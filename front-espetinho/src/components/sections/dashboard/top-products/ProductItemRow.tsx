@@ -1,4 +1,4 @@
-import { Chip, LinearProgress, TableCell, TableRow } from '@mui/material';
+import { LinearProgress, TableCell, TableRow } from '@mui/material';
 import { ProductItem } from 'data/product-data';
 import { ReactElement } from 'react';
 
@@ -26,22 +26,7 @@ const ProductItemRow = ({ productItem }: { productItem: ProductItem }): ReactEle
         {productItem.name}
       </TableCell>
       <TableCell align="left">
-        <LinearProgress
-          variant="determinate"
-          color={productItem.color}
-          value={productItem.sales}
-          sx={{
-            bgcolor: 'grey.900',
-          }}
-        />
-      </TableCell>
-      <TableCell align="center">
-        <Chip
-          label={`${productItem.sales}%`}
-          color={productItem.color as any}
-          variant="outlined"
-          size="medium"
-        />
+          {productItem.sales} Espetos
       </TableCell>
     </TableRow>
   );

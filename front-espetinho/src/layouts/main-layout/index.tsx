@@ -2,7 +2,6 @@ import { useState, ReactElement, PropsWithChildren } from 'react';
 import { Box, Drawer, Toolbar } from '@mui/material';
 import Topbar from './Topbar/Topbar';
 import Sidebar from './Sidebar/Sidebar';
-import Footer from './Footer/Footer';
 
 export const drawerOpenWidth = 240;
 export const drawerCloseWidth = 110;
@@ -65,7 +64,6 @@ const MainLayout = ({ children }: PropsWithChildren): ReactElement => {
           {children}
         </Box>
       </Box>
-      <Footer open={open} />
     </>
   );
 };

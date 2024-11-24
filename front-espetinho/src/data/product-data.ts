@@ -10,26 +10,26 @@ export interface ProductItem {
 export const productTableRows: ProductItem[] = [
   {
     id: '01',
-    name: 'Home Decore Range',
+    name: 'Bovino',
     color: 'warning',
-    sales: 78,
+    sales: 26,
   },
   {
     id: '02',
-    name: 'Disney Princess Dress',
+    name: 'Medalhão de Frango',
     color: 'primary',
-    sales: 62,
+    sales: 22,
   },
   {
     id: '03',
-    name: 'Bathroom Essentials',
+    name: 'Pão de Alho',
     color: 'info',
-    sales: 51,
+    sales: 17,
   },
   {
     id: '04',
-    name: 'Apple Smartwatch',
+    name: 'Linguiça',
     color: 'secondary',
-    sales: 29,
+    sales: 12,
   },
 ];
