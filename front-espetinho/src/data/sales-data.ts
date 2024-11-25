@@ -8,7 +8,6 @@ export interface SaleItem {
   icon: string;
   title: string;
   subtitle: string;
-  increment: number;
   color: string;
 }
 
@@ -16,33 +15,29 @@ const salesData: SaleItem[] = [
   {
     id: 1,
     icon: totalSales,
-    title: '$5k',
-    subtitle: 'Total Sales',
-    increment: 10,
+    title: 'R$ 2.500',
+    subtitle: 'Faturamento',
     color: 'warning.main',
   },
   {
     id: 2,
     icon: totalOrder,
-    title: '500',
-    subtitle: 'Total Order',
-    increment: 8,
+    title: '138',
+    subtitle: 'Total de pedidos',
     color: 'primary.main',
   },
   {
     id: 3,
     icon: productSold,
-    title: '9',
-    subtitle: 'Product Sold',
-    increment: 2,
+    title: 'Bovino',
+    subtitle: 'Produtos em falta',
     color: 'secondary.main',
   },
   {
     id: 4,
     icon: newCustomer,
     title: '12',
-    subtitle: 'New Customer',
-    increment: 3,
+    subtitle: 'Novos clientes',
     color: 'info.main',
   },
 ];

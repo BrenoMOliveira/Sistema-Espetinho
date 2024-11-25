@@ -14,9 +14,6 @@ const SaleCard = ({ saleItem }: { saleItem: SaleItem }): ReactElement => {
         <Typography variant="body1" color="text.secondary" mb={2}>
           {saleItem.subtitle}
         </Typography>
-        <Typography variant="body2" color={saleItem.color} lineHeight={1.25}>
-          +{saleItem.increment}% from yesterday
-        </Typography>
       </Box>
     </Stack>
   );

@@ -21,7 +21,7 @@ const navItems: NavItem[] = [
     icon: 'material-symbols-light:leaderboard-outline',
     active: true,
   },
-  {
+  /*{
     id: 4,
     path: '/estoque',
     title: 'Estoque',
@@ -48,7 +48,7 @@ const navItems: NavItem[] = [
     title: 'Configurações',
     icon: 'mingcute:settings-3-line',
     active: false,
-  },
+  },*/
   {
     id: 11,
     path: 'authentication/login',
@@ -56,13 +56,13 @@ const navItems: NavItem[] = [
     icon: 'tabler:login',
     active: true,
   },
-  {
+  /*{
     id: 12,
     path: 'authentication/sign-up',
     title: 'Sair',
     icon: 'tdesign:user-add',
     active: true,
-  },
+  },*/
 ];
 
 export default navItems;

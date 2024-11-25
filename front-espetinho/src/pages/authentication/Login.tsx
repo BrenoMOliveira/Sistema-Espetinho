@@ -46,15 +46,6 @@ const Login = (): ReactElement => {
         }}
       >
         <Stack justifyContent="center" gap={5}>
-          <Typography variant="h3" textAlign="center" color="text.secondary">
-            Log In
-          </Typography>
-          <Typography variant="h6" fontWeight={500} textAlign="center" color="text.primary">
-            Don’t have an account?{' '}
-            <Link href="/authentication/sign-up" underline="none">
-              Sign up
-            </Link>
-          </Typography>
           <TextField
             variant="filled"
             label="Email"
@@ -77,7 +68,7 @@ const Login = (): ReactElement => {
           />
           <TextField
             variant="filled"
-            label="Password"
+            label="Senha"
             type={showPassword ? 'text' : 'password'}
             sx={{
               '.MuiFilledInput-root': {
@@ -116,26 +107,17 @@ const Login = (): ReactElement => {
               ),
             }}
           />
-          <FormGroup sx={{ ml: 1, width: 'fit-content' }}>
-            <FormControlLabel
-              control={<Checkbox />}
-              label="Keep me signed in"
-              sx={{
-                color: 'text.secondary',
-              }}
-            />
-          </FormGroup>
           <Button
             onClick={handleSubmit}
             sx={{
               fontWeight: 'fontWeightRegular',
             }}
           >
-            Log In
+            Entrar
           </Button>
           <Divider />
           <Typography textAlign="center" color="text.secondary" variant="body1">
-            Or sign in using:
+            Entrar com:
           </Typography>
           <Stack gap={1.5} direction="row" justifyContent="space-between">
             <Button
